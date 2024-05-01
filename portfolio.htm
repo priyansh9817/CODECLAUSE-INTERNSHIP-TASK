@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PortFolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: rgb(0, 0, 33);
+            color: white;
+            font-family: 'poppins', sans-serif;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 70px;
+            background-color: rgb(92 92 192);
+            position: sticky;
+            top: 5px;
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li {
+            list-style: none;
+            margin: 0 23px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+        }
+
+        nav ul li a:hover {
+            color: lavender;
+            font-size: 1.04rem;
+        }
+
+        main hr {
+            border: 0;
+            background: #9c97f1;
+            height: 1.2px;
+            margin: 80px 84px;
+        }
+
+        .left {
+            font-size: 1.5rem;
+            overflow: hidden;
+        }
+
+        .firstsection {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            margin: 130px 0;
+        }
+
+        .firstsection>div {
+            width: 30%;
+        }
+
+        .leftsection {
+            font-size: 3rem;
+
+        }
+
+        .leftsection .RESUME {
+
+           
+            border: #fff 1px solid;
+            position: relative;
+            width: 3px;
+            border-radius: 18px;
+            font-size: 16px;
+            padding-left: 22px;
+            padding-right: 82px;
+            height: 26px;
+            margin-left: 19px;
+            margin-top: 70px;
+            box-shadow: 0px 1px 0px 5px blueviolet;
+            
+        }
+        .RESUME a{
+            text-decoration: none;
+            color: white;
+        }
+        .leftsection .Github{
+            border: #fff 1px solid;
+            position: relative;
+            width: 3px;
+            border-radius: 18px;
+            font-size: 16px;
+            padding-left: 22px;
+            padding-right: 86px;
+            height: 26px;
+            margin-left: 202px;
+            margin-top: -25px;
+            box-shadow: 0px 1px 0px 5px blueviolet;
+        }
+        .Github a{
+            text-decoration: none;
+            color: white;
+        }
+
+        .rightsection img {
+            width: 80%;
+        }
+
+        .purple {
+            color: rgb(159, 81, 232);
+        }
+
+        .textgrey {
+            color: grey;
+        }
+
+        #element {
+            color: rgb(159, 81, 232);
+        }
+
+        .skillsection {
+            max-width: 80vw;
+            margin: auto;
+        }
+
+        #skills {
+            margin-left: 39px;
+            margin-bottom: 59px;
+            color: #7571ba;
+            font-size: 2.9rem;
+
+        }
+
+        .list {
+            text-align: center;
+            /* background-color: rgb(162 23 174); */
+            width: 61vw;
+            height: 187px;
+            border-top-left-radius: 25px;
+            margin: 10px 205px;
+            list-style: none;
+            border: 5px solid blueviolet;
+            border-bottom-right-radius: 25px;
+
+        }
+
+        .secondsection {
+            font-size: 1.9rem;
+            max-width: 80vw;
+            height: 80vh;
+            margin: auto;
+        }
+
+        #Education {
+            margin-top: 69px;
+            margin-left: 42px;
+            color: #6343c2;
+            padding-bottom: 38px;
+        }
+
+        .hr2 {
+            border: 0;
+            background: #9c97f1;
+            height: 1.2px;
+            width: 495px;
+            margin-top: -30px;
+            margin-left: -75px;
+        }
+
+        .secondsection .box {
+            background: white;
+            width: 80vw;
+            height: 2px;
+            margin: 56px 0;
+            display: flex;
+        }
+
+        .secondsection .verticle {
+            height: 91px;
+            width: 1px;
+            background-color: white;
+            margin: 1px 225px;
+        }
+
+        .image-top {
+            width: 54px;
+            position: relative;
+            top: -44px;
+            left: -26px;
+
+        }
+
+        .verticle-title {
+            position: relative;
+            top: 75px;
+            width: 150px;
+            left: -92px;
+            color: orange;
+        }
+
+        .verticle-desc {
+            position: relative;
+            top: 81px;
+            color: gray;
+            width: 131px;
+            font-size: 16px;
+            left: -49px;
+
+        }
+
+        .image-top2 {
+            width: 45px;
+            position: relative;
+            top: -47px;
+            left: -21px;
+
+        }
+
+        .verticle-title2 {
+            position: relative;
+            top: 75px;
+            width: 150px;
+            left: -82px;
+            color: orange;
+        }
+
+        .verticle-desc2 {
+            position: relative;
+            top: 81px;
+            color: gray;
+            width: 131px;
+            font-size: 16px;
+            left: -73px;
+
+        }
+
+        .image-top3 {
+            width: 42px;
+            position: relative;
+            top: -43px;
+            left: -21px;
+        }
+
+        .verticle-title3 {
+            position: relative;
+            top: 75px;
+            width: 150px;
+            left: -82px;
+            color: orange;
+        }
+
+        .verticle-desc3 {
+            position: relative;
+            top: 81px;
+            color: gray;
+            width: 131px;
+            font-size: 16px;
+            left: -73px;
+
+        }
+
+        .project {
+            margin-top: 10px;
+            margin-left: 25px;
+            position: relative;
+            display: none;
+        }
+
+        .hr3 {
+            border: 0;
+            background: #9c97f1;
+            height: 1.2px;
+            width: 495px;
+            margin: 15px 70px;
+        }
+
+        #projectstyle {
+            font-size: 2rem;
+            margin-top: 48px;
+            margin-left: 224px;
+            color: #6343c2;
+            padding-bottom: 6px;
+        }
+
+        .projectbox {
+            margin: 5px 10px;
+            display: flex;
+            padding: 5px;
+            justify-content: space-evenly;
+
+        }
+
+        .box1 {
+            width: 25vw;
+            height: 35vh;
+            border: 2px solid white;
+            border-radius: 30px;
+            box-shadow: 6px 8px 4px 5px grey;
+            overflow: hidden;
+        }
+
+        .box2 {
+            width: 25vw;
+            height: 35vh;
+            border: 2px solid white;
+            border-radius: 30px;
+            box-shadow: 6px 8px 4px 5px grey;
+        }
+
+        .box3 {
+            width: 25vw;
+            height: 35vh;
+            border: 2px solid white;
+            border-radius: 30px;
+            box-shadow: 6px 8px 4px 5px grey;
+        }
+
+        .footer {
+            background-color: rgb(228, 148, 248);
+
+
+        }
+
+        .footer {
+            display: flex;
+            padding: 23px 122px;
+            margin-top: 140px;
+            justify-content: space-evenly;
+        }
+
+        .footer ul {
+            list-style: none;
+
+        }
+
+        .footer>div {
+            width: 223px;
+        }
+
+        .footer .footer-rights {
+            text-align: center;
+            color: gray;
+            padding: 12px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="left">Priyanshu's portfolio</div>
+            <div class="right">
+                <ul>
+                    <li><a href="#Home">Home</li></a>
+                    <li><a href="#About">About</li></a>
+                    <li><a href="#Services">Services</li></a>
+                    <li><a href="#Project">Project</li></a>
+                    <li><a href="#Contact Me">Contact Me</li></a>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="firstsection" id="Home">
+            <div class="leftsection">
+                Hi,My name is <span class="purple">Priyanshu</span>.
+                <div>I am a passionate</div>
+                <span id="element"></span>
+                <div class="RESUME">
+                    <a href="RESUME ..12.docx">RESUME</a>
+                </div>
+                <div class="Github"><a href="https://github.com/priyansh280">Github</a></div>
+
+
+            </div>
+            <div class="rightsection">
+                <img src="—Pngtree—programmer clipart developer sitting behind_11075227.png" alt="">
+            </div>
+            
+        </section>
+        <hr>
+        <section class="skillsection " id="About">
+            <span class="textgrey">What I have done so far</span>
+            <h1 id="skills">Skills</h1>
+            <ul class="list">
+                <li>
+                    <h3>HTML,CSS,JavaScript</h3>
+                </li>
+                <li>
+                    <h3>C++</h3>
+                </li>
+                <li>
+                    <h3>Python</h3>
+                </li>
+                <li>
+                    <h3>Photography,Videography</h3>
+                </li>
+                <li>
+                    <h3>Editing</h3>
+                </li>
+                <li>
+                    <h3>UI Design</h3>
+                </li>
+            </ul>
+
+        </section>
+        <section class="secondsection">
+            <h1 id="Education">Education</h1>
+            <hr class="hr2">
+            <div class="box">
+                <div class="verticle"><img class="image-top" src="potfolio/university.png" alt="">
+                    <div class="verticle-title">University</div>
+                    <div class="verticle-desc">
+                        Pursuing B.tech C.S.E from Maharishi Markhendshwar University.
+                    </div>
+                </div>
+                <div class="verticle"><img class="image-top2" src="potfolio/secondary school.png" alt="">
+                    <div class="verticle-title2">Secondary school</div>
+                    <div class="verticle-desc2">
+                        I have done my 12th from BSEB (Bihar School Examination Board) with 80% marks.
+                    </div>
+                </div>
+                <div class="verticle"><img class="image-top3" src="potfolio/primary school.jpeg" alt="">
+                    <div class="verticle-title3">School</div>
+                    <div class="verticle-desc3">
+                        I have done my school from CBSE (centeral Board of Education) with 73% marks.
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <section class="Project" id="Project">
+            <div id="projectstyle">
+                <h1>Project</h1>
+            </div>
+            <hr class="hr3">
+            <div class="projectbox">
+                <div class="box1">
+                    <source src="edit.mp4" type="video/mp4">
+                </div>
+                <div class="box2"></div>
+                <div class="box3"></div>
+            </div>
+        </section>
+
+    </main>
+    <footer>
+        <div class="footer" >
+            <div class="first">
+                <h3>Priyanshu's portfolio</h3>
+            </div>
+            <div class="second">
+                <ul>
+                    <li><a href="/">Home</li></a>
+                    <li><a href="/">About</li></a>
+                    <li><a href="/">Services</li></a>
+                    <li><a href="/">Project</li></a>
+                    <li><a href="/">Contact Me</li></a>
+                </ul>
+            </div>
+            <div class="third">
+                <ul>
+                    <li><a href="/">Home</li></a>
+                    <li><a href="/">About</li></a>
+                    <li><a href="/">Services</li></a>
+                    <li><a href="/">Project</li></a>
+                    <li><a href="/">Contact Me</li></a>
+                </ul>
+            </div>
+            <div class="fourth">
+                <ul>
+                    <li><a href="/">Home</li></a>
+                    <li><a href="/">About</li></a>
+                    <li><a href="/">Services</li></a>
+                    <li><a href="/">Project</li></a>
+                    <li><a href="/">Contact Me</li></a>
+                </ul>
+            </div>
+        </div>
+        <div class="footer .footer-rights">
+            www.priyanshu'sportfolio.com | © All right reserved
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+</body>
+<script>
+    var typed = new Typed('#element', {
+        strings: ['Web Developer', 'Graphics Designer', 'Web Designer', 'Video Editor'],
+        typeSpeed: 50,
+    });
+
+
+</script>
+
+</html>
